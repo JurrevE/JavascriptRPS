@@ -1,3 +1,5 @@
+let userAnswer= window.prompt("choose between rock paper and scissors")
+
 function getComputerChoice() {
   let compChoices = ["rock", "paper", "scissors"] // let computer pick [rock, paper, scissors]
   let randomizeChoice = Math.floor(Math.random() * compChoices.length) + 1 // randomize rock paper and scissors
@@ -44,8 +46,8 @@ function playSingleRound(getComputerChoice, playerSelection) {
 const computerChoice = getComputerChoice();
 console.log("Computer's Choice: ")
 console.log(computerChoice);
-let userInput = "paper"
-let playerSelection = userInput.toLowerCase();
+
+let playerSelection = userAnswer.toLowerCase();
 
 function game() {
   for (let i = 0; i < 5; i++)  {
